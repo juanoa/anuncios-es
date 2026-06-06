@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/main.astro"
+import { AdsPerMonthChart } from "@/components/AdsPerMonthChart"
 import { AdsPerYearChart } from "@/components/AdsPerYearChart"
 import { AvgWordsPerYearChart } from "@/components/AvgWordsPerYearChart"
 import { ContactChannelsPerYearChart } from "@/components/ContactChannelsPerYearChart"
@@ -9,6 +10,7 @@ import { ContactChannelsPerYearChart } from "@/components/ContactChannelsPerYear
   <div class="container mx-auto flex max-w-2xl flex-col gap-6 px-6 py-12">
     <h1 class="font-heading mb-2 text-2xl font-medium">Anuncios</h1>
     <AdsPerYearChart client:load />
+    <AdsPerMonthChart client:load />
     <AvgWordsPerYearChart client:load />
     <ContactChannelsPerYearChart client:load />
   </div>
